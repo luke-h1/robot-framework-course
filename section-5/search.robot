@@ -22,6 +22,7 @@ ${ERROR}                //*[@id="main"]/p
 *** Test Cases ***
 User should experience error if they enter a product that doesn't exist 
     Open Browser                     ${URL}       ${BROWSER}
+    Maximize Browser Window 
     Input text                       ${SEARCH}    ${PRODUCT} 
     Press Keys                       ${SEARCH}    ENTER                
     Sleep                            3            
@@ -29,6 +30,7 @@ User should experience error if they enter a product that doesn't exist
     Sleep                            1 
     Location Should Contain          ${EXPECTED_URL_TEXT}
     Sleep                            1 
+    Close Browser
 
 
 
