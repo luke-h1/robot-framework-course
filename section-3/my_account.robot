@@ -14,6 +14,7 @@ ${BROWSER}       chrome
 ${MY_ACCOUNT}    xpath=//*[@id="site-navigation"]/div[1]/ul/li[4]/a
 ${ERROR_STR}     ERROR: Invalid username. Lost your password?
 
+
 *** Test Cases ***
 Login attempt with invalid user should throw error
     Open Browser                 ${URL}                      ${BROWSER}
@@ -24,3 +25,4 @@ Login attempt with invalid user should throw error
     Sleep                        3
     Element Should Be Visible    class=woocommerce-error 
     Element Text Should Be       class=woocommerce-error     ${ERROR_STR}
+    
