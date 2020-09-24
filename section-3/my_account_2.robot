@@ -13,7 +13,7 @@ Suite Teardown    Run Keywords    Close Browser
 ${URL}              http://demostore.supersqa.com                          
 ${BROWSER}          chrome 
 ${MY_ACCOUNT}       xpath=//*[@id="site-navigation"]/div[1]/ul/li[4]/a 
-${PWD_ERROR}        ERROR: The password field is empty .
+${PWD_ERROR}        ERROR: The password field is empty.
 ${USERNAME_ERROR}   Error: Username is required.
 
 

@@ -25,4 +25,3 @@ Login attempt with invalid user should throw error
     Sleep                        3
     Element Should Be Visible    class=woocommerce-error 
     Element Text Should Be       class=woocommerce-error     ${ERROR_STR}
-    
